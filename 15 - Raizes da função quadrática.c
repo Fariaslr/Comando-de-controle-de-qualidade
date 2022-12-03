@@ -3,21 +3,22 @@
 #include <math.h>
 
 /*
-	15) FaÁa um programa que leia os coeficientes de uma equaÁ„o do segundo grau. Em 
-	seguida, calcule e mostre as raÌzes dessa equaÁ„o, lembrando que as raÌzes s„o 
+	15) Fa√ßa um programa que leia os coeficientes de uma equa√ß√£o do segundo grau. Em 
+	seguida, calcule e mostre as ra√≠zes dessa equa√ß√£o, lembrando que as ra√≠zes s√£o 
 	calculadas como
-	em que ? = b2 ? 4 * a * c e ax2 + bx + c = 0 representa uma equaÁ„o do segundo 
-	grau. A vari·vel a tem de ser diferente de zero. Caso seja igual, imprima a mensagem ?N„o È equaÁ„o de segundo grau?. Do contr·rio, imprima:
-	? Se ? < 0, n„o existe real. Imprima a mensagem ?N„o existe raiz?.
-	? Se ? = 0 existe uma raiz real. Imprima a raiz e a mensagem ?Raiz ˙nica?.
-	? Se ? > 0, existem duas raÌzes reais. Imprima as raÌzes.
+	em que ? = b2 ? 4 * a * c e ax2 + bx + c = 0 representa uma equa√ß√£o do segundo 
+	grau. A vari√°vel a tem de ser diferente de zero. Caso seja igual, imprima a mensagem ?N√£o √© equa√ß√£o de segundo grau?. Do contr√°rio, imprima:
+	? Se ? < 0, n√£o existe real. Imprima a mensagem ?N√£o existe raiz?.
+	? Se ? = 0 existe uma raiz real. Imprima a raiz e a mensagem ?Raiz √∫nica?.
+	? Se ? > 0, existem duas ra√≠zes reais. Imprima as ra√≠zes.
 */
+
 int main(){
 	
 	int aDaFuncao, bDaFuncao, cDaFuncao, delta, xUm, xDois;
     setlocale(LC_ALL,"");
     
-    printf("Exemplo de uma funÁ„o quadr·tica f(x) = ax≤ + bx + c\n");
+    printf("Exemplo de uma fun√ß√£o quadr√°tica f(x) = ax¬≤ + bx + c\n");
     printf("Insira o A: ");
     scanf("%d",&aDaFuncao);
     
@@ -34,6 +35,6 @@ int main(){
     		xUm = (-bDaFuncao + sqrt(delta)) / 2 * aDaFuncao;
     		xDois = (-bDaFuncao - sqrt(delta)) /2 * aDaFuncao ;
     		printf("X1 = %d\t|X2 = %d",xUm,xDois);
-		} else printf("RaÌz ˙nica!\n");
-	}else printf("N„o existe raiz!\n");
+		} else printf("Ra√≠z √∫nica!\n");
+	}else printf("N√£o existe raiz!\n");
 }
